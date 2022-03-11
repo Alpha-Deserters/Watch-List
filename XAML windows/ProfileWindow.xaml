@@ -5,38 +5,66 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Watch_List.XAML_windows"
         mc:Ignorable="d"
-        Title="ProfileWindow" Height="850" Width="800" ResizeMode="CanResize">
+        Title="ProfileWindow" Height="740" Width="1440" ResizeMode="CanResize" Background="#eaecef">
     <Grid>
         <ScrollViewer VerticalScrollBarVisibility="Hidden">
-            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left" Height="850">
-                <StackPanel VerticalAlignment="Top" Height="400">
-                    <Image 
-                        x:Name="Cover"
-                        Width="800"
-                        Height="350"
-                        HorizontalAlignment="Left"
-                        Stretch="Fill"
-                        Source="D:\meme\94e0a0e99afe8f691474d1519b932af0.jpg"/>
+            <StackPanel Width="1440" Height="1000">
+                <Border Height="40" Background="#343a40">
+                    
+                </Border>
+                <Border Height="5" Background="#ff5c57"/>
+                <Border Height="25"/>
 
-                    <TextBlock 
-                        x:Name="Nickname"
-                        Text="NICKNAME"
-                        HorizontalAlignment="Left"
-                        Margin="130,0,0,0"
-                        FontFamily="Helvetica"
-                        FontSize="15"/>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1440">
+                    <Border Width="50"/>
+                    <StackPanel VerticalAlignment="Top"  Background="#fff" HorizontalAlignment="Left">
+                        <Image 
+                            x:Name="Cover"
+                            Width="800"
+                            Height="350"
+                            HorizontalAlignment="Left"
+                            Stretch="Fill"
+                            Source="D:\meme\94e0a0e99afe8f691474d1519b932af0.jpg"/>
 
-                    <Image
-                        x:Name="Avatar"
-                        Width="100"
-                        Height="100"
-                        Stretch="Fill"
-                        HorizontalAlignment="Left"
-                        Source="D:\артики\699959895348320a0affa5b58f8c28bc.jpg" Margin="21,-70,0,139">
-                        <Image.Clip>
-                            <RectangleGeometry RadiusX="100" RadiusY="100" Rect="0,0,100,100"/>
-                        </Image.Clip>
-                    </Image>
+                        <TextBlock 
+                            x:Name="Nickname"
+                            Text="NICKNAME"
+                            HorizontalAlignment="Left"
+                            Margin="130,0,0,0"
+                            FontFamily="Helvetica"
+                            FontSize="15"/>
+
+                        <Image
+                            x:Name="Avatar"
+                            Width="100"
+                            Height="100"
+                            Stretch="Fill"
+                            HorizontalAlignment="Left"
+                            Source="D:\артики\699959895348320a0affa5b58f8c28bc.jpg" Margin="21,-70,0,139">
+                            <Image.Clip>
+                                <RectangleGeometry RadiusX="100" RadiusY="100" Rect="0,0,100,100"/>
+                            </Image.Clip>
+                        </Image>
+                    </StackPanel>
+                    <Border Width="50"/>
+                    <StackPanel Background="#fff" VerticalAlignment="Top" Width="290">
+                        <Border BorderBrush="Black" BorderThickness="0.5">
+                            <TextBlock Text="Меню" Height="50" FontSize="20" FontWeight="Medium" Foreground="#343a40"/>
+                        </Border>
+
+                        <Button Background="Transparent">
+                            <TextBlock Text="Список аниме" Height="50" FontSize="20" Foreground="#343a40"/>
+                        </Button>
+                        <Button Background="Transparent">
+                            <TextBlock Text="Список манги" Height="50" FontSize="20" Foreground="#343a40"/>
+                        </Button>
+                        <Button Background="Transparent">
+                            <TextBlock Text="Мои рецензии" Height="50" FontSize="20" Foreground="#343a40"/>
+                        </Button>
+                        <Button Background="Transparent">
+                            <TextBlock Text="Настройки" Height="50" FontSize="20" Foreground="#343a40"/>
+                        </Button>
+                    </StackPanel>
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>
