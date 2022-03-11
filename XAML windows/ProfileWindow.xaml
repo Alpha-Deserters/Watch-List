@@ -52,6 +52,7 @@
                             HorizontalAlignment="Left"
                             Height="100"
                             Margin="370,-150,0,0"
+                            FontWeight="Medium"
                             FontFamily="Helvetica"
                             FontSize="15"/>
                         <TextBlock
