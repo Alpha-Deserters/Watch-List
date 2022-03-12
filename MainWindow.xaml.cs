@@ -25,7 +25,7 @@ namespace Watch_List
         {
             InitializeComponent();
             
-            //new ProfileWindow().Show();
+            new ProfileWindow().Show();
         }
     }
 }

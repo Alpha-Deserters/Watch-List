@@ -72,18 +72,38 @@
                         <Border BorderBrush="Black" BorderThickness="0.5">
                             <TextBlock Text="Меню" Height="50" FontSize="20" FontWeight="Medium" Foreground="#343a40"/>
                         </Border>
-
-                        <Button Background="Transparent">
-                            <TextBlock Text="Список аниме" Height="50" FontSize="20" Foreground="#343a40"/>
+                        
+                        <Button Background="Transparent" Height="50">
+                            <StackPanel Orientation="Horizontal" Width="290">
+                                <Border Width="5"/>
+                                <Image Width="27" Height="27" VerticalAlignment="Center" HorizontalAlignment="Left" Source="D:\AKIRA 1LOVE\Watch List\Tools\edit-list.png"/>
+                                <Border Width="55"/>
+                                <TextBlock Text="Список аниме" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#343a40"/>
+                            </StackPanel>
                         </Button>
-                        <Button Background="Transparent">
-                            <TextBlock Text="Список манги" Height="50" FontSize="20" Foreground="#343a40"/>
+                        <Button Background="Transparent" Height="50">
+                            <StackPanel Orientation="Horizontal" Width="290">
+                                <Border Width="5"/>
+                                <Image Width="27" Height="27" VerticalAlignment="Center" HorizontalAlignment="Left" Source="D:\AKIRA 1LOVE\Watch List\Tools\edit-list.png"/>
+                                <Border Width="55"/>
+                                <TextBlock Text="Список манги" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#343a40"/>
+                            </StackPanel>
                         </Button>
-                        <Button Background="Transparent">
-                            <TextBlock Text="Мои рецензии" Height="50" FontSize="20" Foreground="#343a40"/>
+                        <Button Background="Transparent" Height="50">
+                            <StackPanel Orientation="Horizontal" Width="290">
+                                <Border Width="5"/>
+                                <Image Width="27" Height="27" VerticalAlignment="Center" HorizontalAlignment="Left" Source="D:\AKIRA 1LOVE\Watch List\Tools\edit-list.png"/>
+                                <Border Width="55"/>
+                                <TextBlock Text="Мои рецензии" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#343a40"/>
+                            </StackPanel>
                         </Button>
-                        <Button Background="Transparent">
-                            <TextBlock Text="Настройки" Height="50" FontSize="20" Foreground="#343a40"/>
+                        <Button Background="Transparent" Height="50">
+                            <StackPanel Orientation="Horizontal" Width="290">
+                                <Border Width="5"/>
+                                <Image Width="27" Height="27" VerticalAlignment="Center" HorizontalAlignment="Left" Source="D:\AKIRA 1LOVE\Watch List\Tools\setting.png"/>
+                                <Border Width="55"/>
+                                <TextBlock Text="Настройки" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Foreground="#343a40"/>
+                            </StackPanel>
                         </Button>
                     </StackPanel>
                 </StackPanel>
