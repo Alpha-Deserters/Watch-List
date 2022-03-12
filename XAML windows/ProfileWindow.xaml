@@ -45,7 +45,13 @@
                                 <RectangleGeometry RadiusX="100" RadiusY="100" Rect="0,0,100,100"/>
                             </Image.Clip>
                         </Image>
-                        <Button x:Name="ChangeAvatarButton" Background="#eaecef" Content="Сменить аватар" Height="30" Width="95" HorizontalAlignment="Left" Margin="25,-230,0,0"/>
+                        <Button 
+                            x:Name="ChangeAvatarButton"
+                            Background="#eaecef"
+                            Content="Сменить аватар"
+                            Height="30" Width="95"
+                            HorizontalAlignment="Left"
+                            Margin="25,-230,0,0"/>
                         <TextBlock 
                             Text="Обо мне:"
                             VerticalAlignment="Top"

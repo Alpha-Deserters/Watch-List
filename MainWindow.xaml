@@ -21,13 +21,23 @@
                     <Border Width="30">
                         <Image Height="24" Width="24"  Source="D:\AKIRA 1LOVE\Watch List\Tools\login.png"/>
                     </Border>
-                    <TextBlock x:Name="Login" Text="Логин:" HorizontalAlignment="Center"
-                           FontSize="20"
-                           Foreground="#343a40"
-                           FontFamily="Helvetica"                          
-                           Height="25"/>
+                    <TextBlock 
+                        x:Name="Login" 
+                        Text="Логин:" 
+                        HorizontalAlignment="Center"
+                        FontSize="20"
+                        Foreground="#343a40"
+                        FontFamily="Helvetica"                          
+                        Height="25"/>
                     <Border Width="20"/>
-                    <TextBox x:Name="LoginTB" Width="150" Margin="0,0,-150,0" FontSize="20"/>
+                    <TextBox 
+                        x:Name="LoginTB"
+                        Width="150"
+                        Margin="0,0,-150,0"
+                        FontSize="20"
+                        BorderThickness="0"
+                        FontWeight="Light"
+                        FontFamily="Helvetica"/>
                     <TextBlock                      
                         IsHitTestVisible="False"
                         Foreground="Black"
@@ -58,14 +68,22 @@
                     <Border Width="30">
                         <Image Height="24" Width="24"  Source="D:\AKIRA 1LOVE\Watch List\Tools\lock.png"/>
                     </Border>
-                    <TextBlock Text="Пароль:" 
-                           HorizontalAlignment="Center"
-                           FontSize="20"
-                           Foreground="#343a40"
-                           FontFamily="Helvetica"                          
-                           Height="25"/>
+                    <TextBlock 
+                        Text="Пароль:" 
+                        HorizontalAlignment="Center"
+                        FontSize="20"
+                        Foreground="#343a40"
+                        FontFamily="Helvetica"                          
+                        Height="25"/>
                     <Border Width="10"/>
-                    <TextBox  x:Name="PasswordTB" Width="150" FontSize="20" Margin="0,0,-150,0"/>
+                    <TextBox  
+                        x:Name="PasswordTB"
+                        Width="150"                              
+                        Margin="0,0,-150,0"
+                        FontSize="20"
+                        BorderThickness="0"
+                        FontWeight="Light"
+                        FontFamily="Helvetica"/>
                     <TextBlock                      
                         IsHitTestVisible="False"
                         Foreground="Black"
@@ -87,6 +105,7 @@
                             </Style>
                         </TextBlock.Style>
                     </TextBlock>
+                    <Border Width="30"/>
                 </StackPanel>
                 <Border Height="10"/>
             </StackPanel>
