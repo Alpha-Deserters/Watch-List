@@ -17,8 +17,10 @@
 
             <StackPanel Background="#fff"  HorizontalAlignment="Center">
                 <Border Height="10"/>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <Border Width="30"/>
+                <StackPanel Orientation="Horizontal">
+                    <Border Width="30">
+                        <Image Height="24" Width="24"  Source="D:\AKIRA 1LOVE\Watch List\Tools\login.png"/>
+                    </Border>
                     <TextBlock x:Name="Login" Text="Логин:" HorizontalAlignment="Center"
                            FontSize="20"
                            Foreground="#343a40"
@@ -52,7 +54,10 @@
 
                 <Border Height="10"/>
 
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal">
+                    <Border Width="30">
+                        <Image Height="24" Width="24"  Source="D:\AKIRA 1LOVE\Watch List\Tools\lock.png"/>
+                    </Border>
                     <TextBlock Text="Пароль:" 
                            HorizontalAlignment="Center"
                            FontSize="20"
