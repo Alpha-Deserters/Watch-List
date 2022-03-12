@@ -5,39 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Watch_List"
         mc:Ignorable="d"
-        Title="Autorization" Height="400" Width="550" ResizeMode="NoResize">
+        Title="Autorization" Height="450" Width="550" ResizeMode="NoResize" Background="#eaecef">
     <Grid>
         <StackPanel>
-            <StackPanel VerticalAlignment="Top">
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">
                 <Image Source="D:\AKIRA 1LOVE\Watch List\Tools\ia1205.png" Stretch="Fill" Width="150" Height="150" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <TextBlock Text="Авторизация" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" FontFamily="Segoe Print"/>
+                <TextBlock Text="Авторизация" HorizontalAlignment="Center" FontSize="22" FontWeight="Bold" FontFamily="Segoe Print"/>
             </StackPanel>
-            
-            <Border Height="20"/>
-            
-            <StackPanel VerticalAlignment="Top">
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock x:Name="Login" Text="Логин:" HorizontalAlignment="Left"
-                           FontSize="15"
-                           FontFamily="Helvetica"
-                           Margin="150,0,0,0"
+
+            <Border Height="30"/>
+
+            <StackPanel Background="#fff"  HorizontalAlignment="Center">
+                <Border Height="10"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Border Width="30"/>
+                    <TextBlock x:Name="Login" Text="Логин:" HorizontalAlignment="Center"
+                           FontSize="20"
+                           Foreground="#343a40"
+                           FontFamily="Helvetica"                          
                            Height="25"/>
-                    
                     <Border Width="20"/>
-                    <TextBox x:Name="LoginTB" Width="150" FontSize="15"/>
+                    <TextBox x:Name="LoginTB" Width="150" Margin="0,0,-150,0" FontSize="20"/>
                     <TextBlock                      
                         IsHitTestVisible="False"
                         Foreground="Black"
-                        FontSize="15"
+                        FontSize="16"
                         Opacity="0.5"
-                        Width="235"
+                        Width="150"
                         FontFamily="Helvetica"                        
                         Text="Имя пользователя"
                         Height="25"
-                        Margin="-150,0,0,0">
+                        Margin="0,0,0,0">
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}">
-                                <Setter Property="Visibility" Value="Collapsed"/>
+                                <Setter Property="Visibility" Value="Hidden"/>
                                 <Style.Triggers>
                                     <DataTrigger Binding="{Binding Text, ElementName=LoginTB}" Value="">
                                         <Setter Property="Visibility"  Value="Visible"/>
@@ -46,32 +47,33 @@
                             </Style>
                         </TextBlock.Style>
                     </TextBlock>
+                    <Border Width="30"/>
                 </StackPanel>
-                
+
                 <Border Height="10"/>
-                
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Пароль:" HorizontalAlignment="Left"
-                           FontSize="15"
-                           FontFamily="Helvetica"
-                           Margin="150,0,0,0"
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Text="Пароль:" 
+                           HorizontalAlignment="Center"
+                           FontSize="20"
+                           Foreground="#343a40"
+                           FontFamily="Helvetica"                          
                            Height="25"/>
                     <Border Width="10"/>
-                    <TextBox  x:Name="PasswordTB" Width="150"
-                             />
+                    <TextBox  x:Name="PasswordTB" Width="150" FontSize="20" Margin="0,0,-150,0"/>
                     <TextBlock                      
                         IsHitTestVisible="False"
                         Foreground="Black"
-                        FontSize="15"
+                        FontSize="16"
                         Opacity="0.5"
-                        Width="235"
+                        Width="150"
                         FontFamily="Helvetica"                        
                         Text="Пароль аккаунта"
                         Height="25"
-                        Margin="-150,0,0,0">
+                        Margin="0,0,0,0">
                         <TextBlock.Style>
                             <Style TargetType="{x:Type TextBlock}">
-                                <Setter Property="Visibility" Value="Collapsed"/>
+                                <Setter Property="Visibility" Value="Hidden"/>
                                 <Style.Triggers>
                                     <DataTrigger Binding="{Binding Text, ElementName=PasswordTB}" Value="">
                                         <Setter Property="Visibility"  Value="Visible"/>
@@ -81,6 +83,14 @@
                         </TextBlock.Style>
                     </TextBlock>
                 </StackPanel>
+                <Border Height="10"/>
+            </StackPanel>
+            <Border Height="30"/>
+            <StackPanel Orientation="Horizontal">
+                <Border Width="135"/>
+                <Button x:Name="LoginButton" Content="LOGIN" Height="35" Width="90"/>
+                <Border Width="100"/>
+                <Button x:Name="RegisterButtton" Content="REGISTER" Height="35" Width="90"/>
             </StackPanel>
         </StackPanel>
     </Grid>
