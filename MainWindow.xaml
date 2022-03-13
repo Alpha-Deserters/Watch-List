@@ -112,7 +112,7 @@
             <Border Height="30"/>
             <StackPanel Orientation="Horizontal">
                 <Border Width="135"/>
-                <Button x:Name="LoginButton" Content="LOGIN" Height="35" Width="90"/>
+                <Button x:Name="LoginButton" Content="LOGIN" Height="35" Width="90" Click="LoginButton_Click"/>
                 <Border Width="100"/>
                 <Button x:Name="RegisterButtton" Content="REGISTER" Height="35" Width="90"/>
             </StackPanel>

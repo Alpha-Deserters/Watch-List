@@ -13,7 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Watch_List.XAML_windows;
-
+using Watch_List.Tool_classes;
+using Watch_List.Model_classes;
 namespace Watch_List
 {
     /// <summary>
@@ -23,9 +24,22 @@ namespace Watch_List
     {
         public MainWindow()
         {
-            InitializeComponent();
-            
-            new ProfileWindow().Show();
+            InitializeComponent();                       
+        }
+
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            var users = new List<User>();
+            users.ConvertJsonToList("Users");
+
+            foreach (var user in users)
+            {
+                if(LoginTB.Text == user.Login &&
+                   PasswordTB.Text == user.Password)
+                {
+                    new ProfileWindow().Show();
+                }
+            }
         }
     }
 }
