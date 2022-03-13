@@ -37,7 +37,7 @@ namespace Watch_List
                 if(LoginTB.Text == user.Login &&
                    PasswordTB.Text == user.Password)
                 {
-                    new ProfileWindow().Show();
+                    new ProfileWindow(user).Show();
                 }
             }
         }

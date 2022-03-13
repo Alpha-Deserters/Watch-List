@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Watch_List.Model_classes;
+using Watch_List.Tool_classes;
 
 namespace Watch_List.XAML_windows
 {
@@ -19,9 +21,13 @@ namespace Watch_List.XAML_windows
     /// </summary>
     public partial class ProfileWindow : Window
     {
-        public ProfileWindow()
+        private User _user;
+        public ProfileWindow(User user)
         {
             InitializeComponent();
+            _user = user;
+            var api = new AnimeAPI();
+            api.GetAnimeList();
         }
     }
 }
