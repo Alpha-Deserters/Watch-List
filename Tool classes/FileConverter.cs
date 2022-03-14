@@ -30,7 +30,7 @@ namespace Watch_List.Tool_classes
             }
             catch (Exception error)
             {
-                Console.WriteLine(error);
+                Console.WriteLine(error.Message);
             }                                  
         }
     }
