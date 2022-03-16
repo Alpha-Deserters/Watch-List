@@ -24,22 +24,33 @@ namespace Watch_List
     {
         public MainWindow()
         {
-            InitializeComponent();                       
+            InitializeComponent();           
         }
 
-        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        private async void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            var users = new List<User>();
-            users.ConvertJsonToList("Users");
+            await LoginButtonClickAsync();
+        }
 
-            foreach (var user in users)
+        private void RegisterButtton_Click(object sender, RoutedEventArgs e)
+        {
+            new RegistrationWindow().Show();
+        }
+
+        private async Task LoginButtonClickAsync() 
+        {
+            var users = new UserItems();
+            await users.UpdateItems();
+
+            foreach (var user in users.Items)
             {
-                if(LoginTB.Text == user.Login &&
+                if (LoginTB.Text == user.Login &&
                    PasswordTB.Text == user.Password)
                 {
                     new ProfileWindow(user).Show();
                 }
             }
         }
+
     }
 }

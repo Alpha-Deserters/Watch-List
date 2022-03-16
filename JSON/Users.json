@@ -1,8 +1,34 @@
 {
   "items": [
     {
+      "login": "21312321332",
+      "password": "2311232132",
+      "email": "1231123213"
+    },
+    {
+      "login": "s",
+      "password": "s",
+      "email": "s"
+    },
+    {
+      "login": "stt",
+      "password": "st",
+      "email": "123"
+    },
+    {
       "login": "stas",
-      "password": "12345"
+      "password": "12345",
+      "email": "baxtonan@gmail.com"
+    },
+    {
+      "login": "stas456",
+      "password": "123",
+      "email": "321"
+    },
+    {
+      "login": "sss",
+      "password": "123",
+      "email": "12345"
     }
   ]
 }
