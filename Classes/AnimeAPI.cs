@@ -6,10 +6,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Watch_List.Model_classes;
-using Watch_List.Model_classes.Anime_API_models;
+using Watch_List.Models;
+using Watch_List.Models.Anime_API_models;
 
-namespace Watch_List.Tool_classes
+namespace Watch_List.Classes
 {
     public class AnimeAPI
     {
@@ -82,7 +82,7 @@ namespace Watch_List.Tool_classes
 
             return deserelizeResponse;
         }
-
+        
         private static string? GenerateParameters(Dictionary<string, string> postBody)
         {
             string? postData = null;
@@ -99,6 +99,6 @@ namespace Watch_List.Tool_classes
             }
 
             return postData;
-        }
+        }       
     }
 }

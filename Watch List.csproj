@@ -9,7 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="JSON\" />
+    <Compile Remove="JSON\**" />
+    <EmbeddedResource Remove="JSON\**" />
+    <None Remove="JSON\**" />
+    <Page Remove="JSON\**" />
   </ItemGroup>
 
   <ItemGroup>

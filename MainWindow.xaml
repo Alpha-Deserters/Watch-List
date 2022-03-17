@@ -9,8 +9,8 @@
     <Grid>
         <StackPanel>
             <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">
-                <Image Source="D:\AKIRA 1LOVE\Watch List\Tools\ia1205.png" Stretch="Fill" Width="150" Height="150" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <TextBlock Text="Авторизация" HorizontalAlignment="Center" FontSize="22" FontWeight="Bold" FontFamily="Segoe Print"/>
+                <Image x:Name="AutorizationImage" Stretch="Fill" Width="150" Height="150" Source="Content\Image\ia1205.png" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <TextBlock Text="Авторизация"  HorizontalAlignment="Center" FontSize="22" FontWeight="Bold" FontFamily="Segoe Print"/>
             </StackPanel>
 
             <Border Height="30"/>
@@ -19,7 +19,7 @@
                 <Border Height="10"/>
                 <StackPanel Orientation="Horizontal">
                     <Border Width="30">
-                        <Image Height="24" Width="24"  Source="D:\AKIRA 1LOVE\Watch List\Tools\login.png"/>
+                        <Image x:Name="UserImage" Height="24" Width="24"  Source="D:\AKIRA 1LOVE\Watch List\Content\Image\login.png"/>
                     </Border>
                     <TextBlock 
                         x:Name="Login" 
@@ -57,7 +57,7 @@
 
                 <StackPanel Orientation="Horizontal">
                     <Border Width="30">
-                        <Image Height="24" Width="24"  Source="D:\AKIRA 1LOVE\Watch List\Tools\lock.png"/>
+                        <Image x:Name="LockImage" Height="24" Width="24"  Source="D:\AKIRA 1LOVE\Watch List\Content\Image\lock.png"/>
                     </Border>
                     <TextBlock 
                         Text="Пароль:" 

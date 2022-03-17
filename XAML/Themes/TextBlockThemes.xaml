@@ -1,6 +1,5 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-
     <Style x:Key="WaterMarkTB1" TargetType="{x:Type TextBlock}">
         <Setter Property="Visibility" Value="Hidden"/>
         <Style.Triggers>
@@ -27,6 +26,4 @@
             </DataTrigger>
         </Style.Triggers>
     </Style>
-
-
 </ResourceDictionary>

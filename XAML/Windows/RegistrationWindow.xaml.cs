@@ -1,31 +1,31 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using System.Windows;
+using Watch_List.Models;
+using Watch_List.Classes;
+using Watch_List.Interfaces;
+using System.Collections.Generic;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using Watch_List.Model_classes;
-using Watch_List.Tool_classes;
 
-namespace Watch_List.XAML_windows
+namespace Watch_List.XAML.Windows
 {
     /// <summary>
     /// Interaction logic for RegistrationWindow.xaml
     /// </summary>
-    public partial class RegistrationWindow : Window
+    public partial class RegistrationWindow : Window, ISourceInitializer
     {
         public RegistrationWindow()
         {
             InitializeComponent();
+            InitSource();
+        }
+
+        public void InitSource()
+        {
+            var images = new Dictionary<string, Image>()
+            {
+                {"2", RegImage }
+            };
+            this.SetImageSource(images);
         }
 
         // async void is bad, but Event handlers are the exception (Mincrosft Documentaion)        
@@ -40,7 +40,7 @@ namespace Watch_List.XAML_windows
             var users = new UserItems();
 
             await users.UpdateItems();
-            var error = users.Items.CheckUniqueness(user);
+            var error = users.Items.TryCheckUniqueness(user);
 
             if (error != null)
             {
@@ -54,11 +54,12 @@ namespace Watch_List.XAML_windows
             if (result.Data == true)
             {
                 MessageBox.Show("Успешная регистрация!");
+                Close();
             }
             else if (result.Data == false)
             {
                 MessageBox.Show("блять..");
             }
-        }
+        }        
     }
 }

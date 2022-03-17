@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Watch_List.Model_classes.Anime_API_models
+namespace Watch_List.Models.Anime_API_models
 {
     public static class Endpoint
     {

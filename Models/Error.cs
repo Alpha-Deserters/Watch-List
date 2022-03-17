@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Watch_List.Model_classes
+namespace Watch_List.Models
 {
     public class Error
     {

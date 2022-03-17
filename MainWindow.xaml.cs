@@ -12,19 +12,33 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Watch_List.XAML_windows;
-using Watch_List.Tool_classes;
-using Watch_List.Model_classes;
+using Watch_List.XAML.Windows;
+using Watch_List.Models;
+using Watch_List.Classes;
+using Watch_List.Interfaces;
+
 namespace Watch_List
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, ISourceInitializer
     {
         public MainWindow()
         {
             InitializeComponent();           
+            InitSource();// init source path 
+        }
+
+        public void InitSource()
+        {
+            var images = new Dictionary<string, Image>()
+            {
+                {"ia1205", AutorizationImage },
+                {"login", UserImage },
+                {"lock", LockImage }
+            };
+            this.SetImageSource(images);
         }
 
         private async void LoginButton_Click(object sender, RoutedEventArgs e)
@@ -50,7 +64,6 @@ namespace Watch_List
                     new ProfileWindow(user).Show();
                 }
             }
-        }
-
+        }       
     }
 }

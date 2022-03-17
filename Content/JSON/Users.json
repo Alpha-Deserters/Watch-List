@@ -29,6 +29,21 @@
       "login": "sss",
       "password": "123",
       "email": "12345"
+    },
+    {
+      "login": "admin",
+      "password": "1488",
+      "email": "sosok@gmail.com"
+    },
+    {
+      "login": "sosiska",
+      "password": "333asda",
+      "email": "12312312@"
+    },
+    {
+      "login": "pipiska",
+      "password": "sss",
+      "email": "ghoulSSS"
     }
   ]
 }

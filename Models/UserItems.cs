@@ -5,11 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-using Watch_List.Tool_classes;
+using Watch_List.Classes;
+using Watch_List.Interfaces;
 
-namespace Watch_List.Model_classes
+namespace Watch_List.Models
 {
-    public class UserItems : IRoutItems<User>
+    public class UserItems : IRoutItems<User> 
     {
         [JsonPropertyName("items")]
         public List<User>? Items { get; set; }

@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace Watch_List.Model_classes
+namespace Watch_List.Models
 {
     public class User
     {

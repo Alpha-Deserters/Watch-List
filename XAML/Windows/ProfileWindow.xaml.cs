@@ -11,10 +11,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Watch_List.Model_classes;
-using Watch_List.Tool_classes;
+using Watch_List.Models;
+using Watch_List.Classes;
 
-namespace Watch_List.XAML_windows
+namespace Watch_List.XAML.Windows
 {
     /// <summary>
     /// Interaction logic for ProfileWindow.xaml
@@ -27,7 +27,8 @@ namespace Watch_List.XAML_windows
             InitializeComponent();
             _user = user;
             var api = new AnimeAPI();
-            api.GetAnimeList();
+            var res = api.GetAnimeByName("Bleach");
+            //this.Visibility = Visibility.Visible;
         }
     }
 }
