@@ -1,0 +1,42 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="Watch_List.Classes.Dictonary_Handlers.MainToolBarHandler">
+
+
+    <DataTemplate x:Key="MainToolBar">
+            <StackPanel  >
+            <Border Height="40" Background="#343a40">
+                <StackPanel Orientation="Horizontal">
+                    <Border Width="100"/>
+                    <TextBlock Text="AKIRA PRODUCT" FontSize="20" Foreground="#fff" FontFamily="Segoe Print" FontWeight="Bold"/>
+                    <Border Width="30"/>
+                    <Button Background="Transparent" Click="AnimeSeachClick"   VerticalAlignment="Center" BorderThickness="0" >
+                        <StackPanel>
+                            <TextBlock Text="Аниме" FontSize="20" FontFamily="Segoe Print" Foreground="#fff"/>
+                        </StackPanel>
+                    </Button>
+                    <Border Width="50"/>
+                    <Button Background="Transparent" VerticalAlignment="Center" BorderThickness="0">
+                        <StackPanel>
+                            <TextBlock Text="Манга" FontSize="20" FontFamily="Segoe Print" Foreground="#fff"/>
+                        </StackPanel>
+                    </Button>
+                    <Border Width="50"/>
+                    <Button Background="Transparent" VerticalAlignment="Center" BorderThickness="0">
+                        <StackPanel>
+                            <TextBlock Text="Персонажи" FontSize="20" FontFamily="Segoe Print" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#fff"/>
+                        </StackPanel>
+                    </Button>
+                    <Border Width="50"/>
+                    <Button Background="Transparent" VerticalAlignment="Center" BorderThickness="0">
+                        <StackPanel>
+                            <TextBlock Text="Случайное аниме" FontSize="20" FontFamily="Segoe Print" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#fff"/>
+                        </StackPanel>
+                    </Button>
+                    <Border Width="100"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </DataTemplate>
+  
+
+</ResourceDictionary>

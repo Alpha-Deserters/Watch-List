@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Watch_List.Models
 {
-    public class Result<T> 
+    public class Result<T>        
     {
         public T? Data { get; set; }
         public string? Error { get; set; }

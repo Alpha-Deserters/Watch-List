@@ -18,7 +18,7 @@ namespace Watch_List.Models
         public async Task UpdateItems()
         {
             Items = new List<User>();
-            await this.ConvertJsonToList("Users");
+            await this.ConvertJsonToList(JsonType.Users);
         }
     }
 }

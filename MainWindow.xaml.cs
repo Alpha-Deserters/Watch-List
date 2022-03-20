@@ -16,6 +16,7 @@ using Watch_List.XAML.Windows;
 using Watch_List.Models;
 using Watch_List.Classes;
 using Watch_List.Interfaces;
+using System.ComponentModel;
 
 namespace Watch_List
 {
@@ -62,6 +63,7 @@ namespace Watch_List
                    PasswordTB.Text == user.Password)
                 {
                     new ProfileWindow(user).Show();
+                    this.Close();
                 }
             }
         }       

@@ -11,6 +11,6 @@ namespace Watch_List.Models.Anime_API_models
         /// <summary>
         /// Anime search endpoint
         /// </summary>
-        public static readonly string Anime = "anime";
+        public const string Anime = "anime";
     }
 }

@@ -29,6 +29,14 @@ namespace Watch_List.XAML.Windows
             var api = new AnimeAPI();
             var res = api.GetAnimeByName("Bleach");
             //this.Visibility = Visibility.Visible;
+           
+        }
+
+        private void SearchButtonClick(object sender, RoutedEventArgs e)
+        {
+            //this.Visibility = Visibility.Hidden;
+            new AnimeSearchWindow().Show();
+            this.Close();           
         }
     }
 }

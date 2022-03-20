@@ -1,0 +1,38 @@
+﻿<Window x:Class="Watch_List.XAML.Windows.AnimeSearchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Watch_List.XAML.Windows"
+        mc:Ignorable="d"
+        Title="AnimeSearchWindow" Height="740" Width="1440" Background="#eaecef">
+    <Grid>
+        <StackPanel>
+            <ContentPresenter Content="{Binding}" ContentTemplate="{StaticResource MainToolBar}"/>
+            <Border Height="5" Background="#ff5c57"/>
+            <Border Height="25"/>
+            <StackPanel Background="#fff" Height="50"  Orientation="Horizontal" >
+                <TextBlock Background="AliceBlue" Text="Search" FontSize="20" FontFamily="Helvetica" Width="100"/>
+                <TextBox x:Name="SearchTB"
+                    FontSize="20"
+                    Width="350"
+                    Height="50"
+                    BorderThickness="0"
+                    FontWeight="Light"
+                    FontFamily="Helvetica"
+                    Margin="0,0,-350,0"/>
+                <TextBlock                           
+                    IsHitTestVisible="False"
+                    Foreground="Black"
+                    FontSize="16"
+                    Opacity="0.5"
+                    Width="350"
+                    FontFamily="Helvetica"                        
+                    Text="Введите название аниме"
+                    Height="50"
+                    Margin="0,0,0,0"                       
+                    Style="{StaticResource WaterMarkTB4}"/>
+            </StackPanel>
+        </StackPanel> 
+    </Grid>
+</Window>

@@ -13,7 +13,7 @@ namespace Watch_List.Classes
 {
     public class AnimeAPI
     {
-        private string _uri = "https://api.jikan.moe/v4/";        
+        private readonly string _uri = "https://api.jikan.moe/v4/";        
 
         public AnimeAPI()
         {

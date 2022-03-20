@@ -20,4 +20,12 @@
     <PackageReference Include="RestSharp" Version="107.3.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Classes\Abstract\" />
+    <Folder Include="Classes\Extension\" />
+    <Folder Include="Classes\Static\" />
+    <Folder Include="Models\JSON models\" />
+    <Folder Include="Models\Route models\" />
+  </ItemGroup>
+
 </Project>

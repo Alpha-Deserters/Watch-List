@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Watch_List"
         mc:Ignorable="d"
         Title="Autorization" Height="450" Width="550" ResizeMode="NoResize" Background="#eaecef">
+
     <Grid>
         <StackPanel>
             <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">
